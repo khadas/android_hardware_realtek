@@ -2,7 +2,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-BDROID_DIR := $(TOP_DIR)system/bt
+BVENDOR_DIR := $(TOP_DIR)hardware/interfaces/bluetooth/1.0/default/
 
 LOCAL_SRC_FILES := \
         rtk_socket.c \
@@ -25,7 +25,7 @@ LOCAL_C_INCLUDES += \
         $(LOCAL_PATH)/../include \
         $(LOCAL_PATH)/../codec/sbc \
         $(LOCAL_PATH)/../codec/plc \
-        $(BDROID_DIR)/hci/include
+        $(BVENDOR_DIR)
 
 LOCAL_SHARED_LIBRARIES := \
         libcutils \
