@@ -68,4 +68,9 @@
 #define BT_HCI_DEVICE_NODE_MAX_LEN 512
 
 #define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
+
+/*rockchip add start*/
+/*disable 16K/MSBC because rtk prefer cvsd*/
+#define DISABLE_WBS TRUE
+#define ESCO_DATA_PATH_PCM 6
 #endif
